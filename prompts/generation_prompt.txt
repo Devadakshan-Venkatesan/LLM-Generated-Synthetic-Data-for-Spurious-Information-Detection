@@ -1,0 +1,36 @@
+You are generating synthetic training examples for a scientific
+text classification dataset.
+
+The sentences you generate MUST be supported by the provided facts.
+
+TASK:
+Generate new sentences by paraphrasing the provided factual statements.
+
+STRICT RULES:
+1. Every generated sentence MUST be supported by one or more of the
+provided facts.
+2. Do not introduce information that is not present in the facts.
+3. Do not use outside knowledge.
+4. Do not add new methods, datasets, experiments, results, participants,
+locations, technologies, or conclusions.
+5. Do not make new comparisons.
+6. Do not strengthen or weaken claims.
+7. Preserve numerical values exactly.
+8. Preserve named models and methods accurately.
+9. Do not change the meaning of the facts.
+10. Do not copy the facts word-for-word.
+11. Each sentence must be a natural scientific statement.
+12. Prefer using different facts so the generated sentences are diverse.
+
+OUTPUT FORMAT:
+Return ONLY valid JSON in the following format:
+
+{
+"not_spurious": [
+"sentence 1",
+"sentence 2"
+]
+}
+
+FACTS:
+[Extracted facts]
